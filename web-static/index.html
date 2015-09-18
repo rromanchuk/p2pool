@@ -233,7 +233,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="/">P2Pool pool (<span class="symbol upper"></span>)</a>
+          <a class="brand" href="/">P2Pool pool (BitcoinXT)</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
 			  <li class="active"><a href="index.html">Stats</a></li>
@@ -251,6 +251,46 @@
 	  	<li><a href="#lastblocks" data-toggle="tab"><i class="icon-list-alt"></i>&nbsp;Last blocks</a></li>
 		<li><a href="#mainnodepayout" data-toggle="tab"><i class="icon-download-alt"></i>&nbsp;Payout</a></li>
 	</ul>
+
+
+	<div class="tab-content">
+	  	<div class="tab-pane active" id="stats">
+			<center>
+        <div class="well" style="display:block; width:1300px; text-align:left">
+            <div class="navbar"><div class="navbar-inner">
+                <a class="brand" href="javascript:void(0)">Usage</a>
+            </div></div>
+            <div class="infobox" style="width:33%; float:left;">
+                <input id="url" size="32" style="width:260px" onclick="this.select();" type="text" value="stratum+tcp://p2pool.downloadtipper.com:9332"><br>
+                <p>
+                Username: [Your payout address]<br>
+                Password: [any]<br><br>
+                For NiceHash use [+DIFF] after address<br>
+                Eg: 1FhXe5Z7BXZmznYsGhxwbC2gaFiALTCxPd+127
+                </p>
+            </div>
+            <div class="infobox" style="width:33%; float:left;">
+                <h4>Note</h4>
+                <p>
+                    Certain individuals are attacking pools with DNS reflection DoS attacks. 
+                    Therefore, every miner should set up failover pools if one should be taken down, preferrably another XT pool.
+                </p>
+            </div>
+            <div class="infobox" style="width:33%; float:left;">
+                <h4>Failover pools</h4>
+                <ul>
+                <li>P2XTPool(EU North) - <a href="http://p2xtpool.ddns.net:9332/">http://p2xtpool.ddns.net:9332</a></li>
+                <li>Verters (US West) - <a href="https://xtpool.verters.com/">https://xtpool.verters.com</a></li>
+                <li>Toomim (US West) - <a href="http://74.82.233.205:9334/">http://74.82.233.205:9334</a></li>
+                <li>Unknown (US East) - <a href="http://71.58.72.67:9332/">http://71.58.72.67:9332</a></li>
+                <li>Galactica (US East) - <a href="http://galactica.geekgalaxy.com:9332/">http://galactica.geekgalaxy.com</a></li>
+                <li>P2Pool (Europe) - <a href="http://getbashed.org:9332/static/ /">http://getbashed.org:9332/static/ </a></li>
+                </ul>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+
 	<div class="tab-content">
 	  	<div class="tab-pane active" id="stats">
 			<center>
@@ -346,7 +386,7 @@
 	</div>
 	<div style="border-bottom: 1px solid #ddd;"></div>
 	<center>
-        <tt>P2Pool version: <span id="version"></span></tt><br/>
+        <tt>P2Pool version: <span id="version"></span> Using fork (XT compatibility) <a href="https://github.com/rromanchuk/p2pool">https://github.com/rromanchuk/p2pool</a> </tt><br/>
 		<tt>Interface by hardcpp <a href="https://github.com/hardcpp/P2PoolExtendedFrontEnd">https://github.com/hardcpp/P2PoolExtendedFrontEnd</a></tt><br/>
 		<tt>Donate if you love it (LTC LdKxw2JewLdo1atDsQ33LiCG9ZUDQ4XmPb) (BTC 1FBa12SPET7YRGHoTXyawp1EBJyFPzju31)</tt>
 	</center>
